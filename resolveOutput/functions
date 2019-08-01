@@ -1,0 +1,6 @@
+"init(context)",
+"pre_run(context)",
+"pre_quit(context)",
+"on_quote(context, quote)",
+"on_order(context, order)",
+"on_trade(context, trade)"

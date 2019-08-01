@@ -1,0 +1,57 @@
+# Summary
+
+- [Beginner Tutorial](./tutorial/BeginnerTutorial.md)
+
+- 函数定义
+  - 基本方法
+    - [init 初始化](./functions/init.md)
+    - [pre_run 运行前](./functions/pre_run.md)
+    - [pre_quit 退出前](./functions/pre_quit.md)
+    - [on_quote 行情信息更新](./functions/on_quote.md)
+    - [on_order 订单信息更新](./functions/on_order.md)
+    - [on_trade 成交信息更新](./functions/on_trade.md)
+  - 设置相关函数
+    - [context.add_md添加行情源](./context/context.add_md.md)
+    - [context.add_account 添加交易账户](./context/context.add_account.md)
+  - Log 相关函数
+    - [context.set_log_level 设置Log级别](./context/context.set_log_level.md)
+    - [context.log_info 输出INFO级别Log信息](./context/context.log_info.md)
+    - [context.log_warn 输出WARN级别Log信息](./context/context.log_warn.md)
+    - [context.log_error 输出INFO级别Log信息](./context/contex.log_error.md)
+  - 行情相关函数
+    - [context.suscribe 订阅行情](./context/context.subscribe.md)
+    - [context.is_subscribed 是否已订阅行情](./context/context.is_subscribed.md)
+    - [context.get_last_md 获取最近一次行情](./context/context.get_last_md.md)
+  - 交易相关函数
+    - [context.insert_limit_order 限价单](./context/context.insert_limit_order.md)
+    - [context.insert_market_order 市价单](./context/context.insert_market_order.md)
+    - [context.insert_fok_order FOK单](./context/context.insert_fok_order.md)
+    - [context.insert_fak_order FAK单](./context/context.insert_fak_order.md)
+    - [context.cancel_order 撤单](./context/context.cancel_order.md)
+  - 仓位和资金管理相关函数
+    - [context.get_sub_portfolio_info 获取策略中账号资产信息](context/context.get_sub_portfolio_info.md)
+    - [context.get_position 获取持仓信息](context/context.get_position.md)
+    - [context.get_portfolio_info 获取策略资产信息](context/context.get_portfolio_info.md)
+  - 其他函数
+    - [context.get_nano 获取当前时间纳秒时间戳](./context/context.get_nano.md)
+    - [context.parse_nano 解析纳秒时间戳到时间字符串](./context/context.parse_nano.md)
+    - [context.parse_time 解析时间字符串到纳秒时间戳](./context/context.parse_time.md)
+    - [context.register_nanotime_callback 注册时间回调](./context/context.register_nanotime_callback.md)
+    - [context.register_nanotime_callback_with_context 注册带context的时间回调](./context/context.register_nanotime_callback_with_context.md)
+- 常量定义
+  - [Source 柜台](./constants/Source.md)
+  - [Exchange 交易所](./constants/Exchange.md)
+  - [InstrumentType 代码类型](./constants/InstrumentType.md)
+  - [Side 买卖](./constants/Side.md)
+  - [Offset 开平](./constants/Offset.md)
+  - [Direction 多空](./constants/Direction.md)
+  - [OrderStatus 委托状态](./constants/OrderStatus.md)
+- 数据结构
+  - [Instrument 合约信息](./data_struct/Instrument.md)
+  - [Quote 行情信息](./data_struct/Quote.md)
+  - [Order 订单信息](./data_struct/Order.md)
+  - [Trade 成交信息](./data_struct/Trade.md)
+  - [Position 持仓信息](./data_struct/Position.md)
+  - [PortfolioInfo 策略资产信息](./data_struct/PortfolioInfo.md)
+  - [SubPortfolioInfo 策略中账号资产信息](./data_struct/SubPortfolioInfo.md)
+- [系统错误代码表](./sys_error/sys_error.md)
