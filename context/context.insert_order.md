@@ -1,4 +1,4 @@
-## `限价单`<div id='insert_limit_order'></div>
+## `报单`<div id='insert_order'></div>
 
 `context.insert_limit_order(instrument_id, exchange_id, account_id,limit_price, volume, side, offset)`
 
@@ -11,6 +11,7 @@
 | account_id    |  str  | 交易账号 |
 | limit_price   | float | 价格     |
 | volume        |  int  | 数量     |
+| price_type    |  str  | 报单类型 |
 | side          |  str  | 买卖方向 |
 | offset        |  str  | 开平方向 |
 

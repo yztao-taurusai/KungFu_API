@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>context.insert_fok_order FOK单 · GitBook</title>
+        <title>context.insert_order 限价单 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="context.insert_fak_order.html" />
+    <link rel="next" href="context.cancel_order.html" />
     
-    
-    <link rel="prev" href="context.insert_market_order.html" />
     
 
     </head>
@@ -422,12 +420,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.5.1" data-path="context.insert_limit_order.html">
+        <li class="chapter active" data-level="1.3.5.1" data-path="context.insert_order.html">
             
-                <a href="context.insert_limit_order.html">
+                <a href="context.insert_order.html">
             
                     
-                    context.insert_limit_order 限价单
+                    context.insert_order 限价单
             
                 </a>
             
@@ -435,46 +433,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5.2" data-path="context.insert_market_order.html">
-            
-                <a href="context.insert_market_order.html">
-            
-                    
-                    context.insert_market_order 市价单
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.3.5.3" data-path="context.insert_fok_order.html">
-            
-                <a href="context.insert_fok_order.html">
-            
-                    
-                    context.insert_fok_order FOK单
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.5.4" data-path="context.insert_fak_order.html">
-            
-                <a href="context.insert_fak_order.html">
-            
-                    
-                    context.insert_fak_order FAK单
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3.5.5" data-path="context.cancel_order.html">
+        <li class="chapter " data-level="1.3.5.2" data-path="context.cancel_order.html">
             
                 <a href="context.cancel_order.html">
             
@@ -902,7 +861,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >context.insert_fok_order FOK单</a>
+        <a href=".." >context.insert_order 限价单</a>
     </h1>
 </div>
 
@@ -917,51 +876,56 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="fok-&#x5355;"><code>FOK &#x5355;</code><div id="insert_fok_order"></div></h2>
-<p><code>context.insert_fok_order(instrument_id, exchange_id, account_id, limit_price, volume, side, offset)</code></p>
+                                <h2 id="&#x62A5;&#x5355;"><code>&#x62A5;&#x5355;</code><div id="insert_order"></div></h2>
+<p><code>context.insert_limit_order(instrument_id, exchange_id, account_id,limit_price, volume, side, offset)</code></p>
 <p><strong>&#x53C2;&#x6570;</strong></p>
 <table>
 <thead>
 <tr>
 <th>&#x53C2;&#x6570;</th>
-<th>&#x7C7B;&#x578B;</th>
+<th style="text-align:center">&#x7C7B;&#x578B;</th>
 <th>&#x8BF4;&#x660E;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>instrument_id</td>
-<td>str</td>
+<td style="text-align:center">str</td>
 <td>&#x5408;&#x7EA6;ID</td>
 </tr>
 <tr>
 <td>exchange_id</td>
-<td>str</td>
+<td style="text-align:center">str</td>
 <td>&#x4EA4;&#x6613;&#x6240;ID</td>
 </tr>
 <tr>
 <td>account_id</td>
-<td>str</td>
-<td>&#x8D26;&#x53F7;ID</td>
+<td style="text-align:center">str</td>
+<td>&#x4EA4;&#x6613;&#x8D26;&#x53F7;</td>
 </tr>
 <tr>
 <td>limit_price</td>
-<td>float</td>
+<td style="text-align:center">float</td>
 <td>&#x4EF7;&#x683C;</td>
 </tr>
 <tr>
 <td>volume</td>
-<td>int</td>
+<td style="text-align:center">int</td>
 <td>&#x6570;&#x91CF;</td>
 </tr>
 <tr>
+<td>price_type</td>
+<td style="text-align:center">str</td>
+<td>&#x62A5;&#x5355;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
 <td>side</td>
-<td>str</td>
+<td style="text-align:center">str</td>
 <td>&#x4E70;&#x5356;&#x65B9;&#x5411;</td>
 </tr>
 <tr>
 <td>offset</td>
-<td>str</td>
+<td style="text-align:center">str</td>
 <td>&#x5F00;&#x5E73;&#x65B9;&#x5411;</td>
 </tr>
 </tbody>
@@ -970,28 +934,28 @@
 <table>
 <thead>
 <tr>
-<th>&#x8FD4;&#x56DE;</th>
+<th style="text-align:center">&#x8FD4;&#x56DE;</th>
 <th>&#x7C7B;&#x578B;</th>
-<th>&#x8BF4;&#x660E;</th>
+<th style="text-align:center">&#x8BF4;&#x660E;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>order_id</td>
+<td style="text-align:center">order_id</td>
 <td>long</td>
-<td>&#x8BA2;&#x5355;ID</td>
+<td style="text-align:center">&#x8BA2;&#x5355;ID</td>
 </tr>
 </tbody>
 </table>
 <p><strong>&#x8303;&#x4F8B;</strong></p>
-<p>&#x901A;&#x8FC7;&#x4EA4;&#x6613;&#x8D26;&#x6237;acc_2&#x4EE5;3500&#x7684;&#x4EF7;&#x683C;&#x5F00;&#x4ED3;&#x4E70;&#x5165;2&#x624B;&#x4E0A;&#x671F;&#x6240;rb1906&#x5408;&#x7EA6;&#xFF0C;&#x7ACB;&#x523B;&#x5168;&#x90E8;&#x6210;&#x4EA4;&#x3001;&#x5426;&#x5219;&#x81EA;&#x52A8;&#x64A4;&#x9500;&#xFF1A;</p>
-<p><code>context.insert_fok_order(&quot;rb1906&quot;, Exchange.SHFE, &quot;acc_2&quot;, 3500.0, 2, Side.Buy, Offset.Open)</code></p>
-<p><strong>&#x8BF4;&#x660E;</strong></p>
-<blockquote>
-<p>&#x7ACB;&#x523B;&#x5168;&#x90E8;&#x6210;&#x4EA4;&#x3001;&#x5426;&#x5219;&#x81EA;&#x52A8;&#x64A4;&#x9500;&#x3002;</p>
-<p>SHFE/DCE/CFFEX&#x652F;&#x6301; FOK&#xFF0C;ZCE &#x6682;&#x4E0D;&#x652F;&#x6301;&#x3002;</p>
-</blockquote>
-<h2 id=""> </h2>
+<ul>
+<li>&#x901A;&#x8FC7;&#x4EA4;&#x6613;&#x8D26;&#x6237;acc_1&#x4EE5;12.0&#x7684;&#x4EF7;&#x683C;&#x4E70;200&#x80A1;&#x6D66;&#x53D1;&#x94F6;&#x884C;&#xFF1A;</li>
+</ul>
+<p><code>context.insert_limit_order(&quot;600000&quot;, Exchange.SSE, &quot;acc_1&quot;, 12.0, 200, Side.Buy, Offset.Open)</code></p>
+<ul>
+<li>&#x901A;&#x8FC7;&#x4EA4;&#x6613;&#x8D26;&#x6237;acc_2&#x4EE5;3500&#x7684;&#x4EF7;&#x683C;&#x5F00;&#x4ED3;&#x4E70;&#x5165;2&#x624B;&#x4E0A;&#x671F;&#x6240;rb1906&#x5408;&#x7EA6;&#xFF1A;</li>
+</ul>
+<p><code>context.insert_limit_order(&quot;rb1906&quot;, Exchange.SHFE, &quot;acc_2&quot;, 3500.0, 2, Side.Buy, Offset.Open)</code></p>
 
                                 
                                 </section>
@@ -1019,12 +983,8 @@
 
             
                 
-                <a href="context.insert_market_order.html" class="navigation navigation-prev " aria-label="Previous page: context.insert_market_order 市价单">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="context.insert_fak_order.html" class="navigation navigation-next " aria-label="Next page: context.insert_fak_order FAK单">
+                <a href="context.cancel_order.html" class="navigation navigation-next navigation-unique" aria-label="Next page: context.cancel_order 撤单">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1035,7 +995,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"context.insert_fok_order FOK单","level":"1.3.5.3","depth":3,"next":{"title":"context.insert_fak_order FAK单","level":"1.3.5.4","depth":3,"path":"context/context.insert_fak_order.md","ref":"./context/context.insert_fak_order.md","articles":[]},"previous":{"title":"context.insert_market_order 市价单","level":"1.3.5.2","depth":3,"path":"context/context.insert_market_order.md","ref":"./context/context.insert_market_order.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters-small","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"context/context.insert_fok_order.md","mtime":"2019-04-25T07:07:20.226Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-09T06:19:18.388Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"context.insert_order 限价单","level":"1.3.5.1","depth":3,"next":{"title":"context.cancel_order 撤单","level":"1.3.5.2","depth":3,"path":"context/context.cancel_order.md","ref":"./context/context.cancel_order.md","articles":[]},"previous":{"title":"交易相关函数","level":"1.3.5","depth":2,"ref":"","articles":[{"title":"context.insert_order 限价单","level":"1.3.5.1","depth":3,"path":"context/context.insert_order.md","ref":"./context/context.insert_order.md","articles":[]},{"title":"context.cancel_order 撤单","level":"1.3.5.2","depth":3,"path":"context/context.cancel_order.md","ref":"./context/context.cancel_order.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters-small","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"context/context.insert_order.md","mtime":"2019-08-20T08:24:37.998Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-20T08:03:44.802Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
