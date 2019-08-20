@@ -23,7 +23,7 @@
     - [context.is_subscribed 是否已订阅行情](./context/context.is_subscribed.md)
     - [context.get_last_md 获取最近一次行情](./context/context.get_last_md.md)
   - 交易相关函数
-    - [context.insert_order 限价单](./context/context.insert_order.md)
+    - [context.insert_order 报单](./context/context.insert_order.md)
     - [context.cancel_order 撤单](./context/context.cancel_order.md)
   - 仓位和资金管理相关函数
     - [context.get_sub_portfolio_info 获取策略中账号资产信息](context/context.get_sub_portfolio_info.md)
