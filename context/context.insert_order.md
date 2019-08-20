@@ -11,9 +11,9 @@
 | account_id    |  str  | 交易账号 |
 | limit_price   | float | 价格     |
 | volume        |  int  | 数量     |
-| price_type    |  str  | 报单类型 |
-| side          |  str  | 买卖方向 |
-| offset        |  str  | 开平方向 |
+| price_type    |  [str](/constants/Price_type.md/#Price_type)  | 报单类型 |
+| side          |  [str](/constants/Side.md/#Side)  | 买卖方向 |
+| offset        |  [str](/constants/Offset.md/#Offset)  | 开平方向 |
 
 **返回**
 
