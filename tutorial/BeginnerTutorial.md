@@ -10,7 +10,7 @@ def init(context):
   
 def on_quote(context, quote):
     context.log_info('[on_quote] ticker {} last_price {}'.format(quote.instrument_id, quote.last_price))
-    order_id = context.insert_limit_order("600000", Exchange.SSE, "ACC_1", quote.ask_price[0], 500, Side.Buy, Offset.Open)
+    order_id = context.insert_order("600000", Exchange.SSE, "ACC_1", quote.ask_price[0], 500, Price_Type.Limit,Side.Buy, Offset.Open)
     context.log_info('[insert] order_id {}'.format(order_id))
 
 def on_order(context, order):

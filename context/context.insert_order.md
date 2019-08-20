@@ -7,7 +7,7 @@
 | 参数          | 类型  | 说明     |
 | ------------- | :---: | -------- |
 | instrument_id |  str  | 合约ID   |
-| exchange_id   |  str  | 交易所ID |
+| exchange_id   |  [str](./constants/Exchange.md/#Exchange)| 交易所ID |
 | account_id    |  str  | 交易账号 |
 | limit_price   | float | 价格     |
 | volume        |  int  | 数量     |
