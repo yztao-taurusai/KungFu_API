@@ -25,8 +25,8 @@
 
 - 通过交易账户acc_1以12.0的价格买200股浦发银行：
 
-`context.insert_limit_order("600000", Exchange.SSE, "acc_1", 12.0, 200, Side.Buy, Offset.Open)`
+`context.insert_limit_order("600000", Exchange.SSE, "acc_1", 12.0, 200, PriceType.Limit, Side.Buy, Offset.Open)`
 
 - 通过交易账户acc_2以3500的价格开仓买入2手上期所rb1906合约：
 
-`context.insert_limit_order("rb1906", Exchange.SHFE, "acc_2", 3500.0, 2, Side.Buy, Offset.Open)`
+`context.insert_limit_order("rb1906", Exchange.SHFE, "acc_2", 3500.0, 2, PriceType.Limit, Side.Buy, Offset.Open)`

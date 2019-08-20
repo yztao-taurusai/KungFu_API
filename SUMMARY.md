@@ -39,6 +39,7 @@
   - [Source 柜台](./constants/Source.md)
   - [Exchange 交易所](./constants/Exchange.md)
   - [InstrumentType 代码类型](./constants/InstrumentType.md)
+  - [Price_Type 报单类型](./constants/Price_Type.md)
   - [Side 买卖](./constants/Side.md)
   - [Offset 开平](./constants/Offset.md)
   - [Direction 多空](./constants/Direction.md)

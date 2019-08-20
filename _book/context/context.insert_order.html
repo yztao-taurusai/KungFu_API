@@ -651,7 +651,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="../constants/Side.html">
+        <li class="chapter " data-level="1.4.4" data-path="../constants/Price_Type.html">
+            
+                <a href="../constants/Price_Type.html">
+            
+                    
+                    Price_Type 报单类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../constants/Side.html">
             
                 <a href="../constants/Side.html">
             
@@ -664,7 +677,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5" data-path="../constants/Offset.html">
+        <li class="chapter " data-level="1.4.6" data-path="../constants/Offset.html">
             
                 <a href="../constants/Offset.html">
             
@@ -677,7 +690,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6" data-path="../constants/Direction.html">
+        <li class="chapter " data-level="1.4.7" data-path="../constants/Direction.html">
             
                 <a href="../constants/Direction.html">
             
@@ -690,7 +703,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.7" data-path="../constants/OrderStatus.html">
+        <li class="chapter " data-level="1.4.8" data-path="../constants/OrderStatus.html">
             
                 <a href="../constants/OrderStatus.html">
             
@@ -951,11 +964,11 @@
 <ul>
 <li>&#x901A;&#x8FC7;&#x4EA4;&#x6613;&#x8D26;&#x6237;acc_1&#x4EE5;12.0&#x7684;&#x4EF7;&#x683C;&#x4E70;200&#x80A1;&#x6D66;&#x53D1;&#x94F6;&#x884C;&#xFF1A;</li>
 </ul>
-<p><code>context.insert_limit_order(&quot;600000&quot;, Exchange.SSE, &quot;acc_1&quot;, 12.0, 200, Side.Buy, Offset.Open)</code></p>
+<p><code>context.insert_limit_order(&quot;600000&quot;, Exchange.SSE, &quot;acc_1&quot;, 12.0, 200, PriceType.Limit, Side.Buy, Offset.Open)</code></p>
 <ul>
 <li>&#x901A;&#x8FC7;&#x4EA4;&#x6613;&#x8D26;&#x6237;acc_2&#x4EE5;3500&#x7684;&#x4EF7;&#x683C;&#x5F00;&#x4ED3;&#x4E70;&#x5165;2&#x624B;&#x4E0A;&#x671F;&#x6240;rb1906&#x5408;&#x7EA6;&#xFF1A;</li>
 </ul>
-<p><code>context.insert_limit_order(&quot;rb1906&quot;, Exchange.SHFE, &quot;acc_2&quot;, 3500.0, 2, Side.Buy, Offset.Open)</code></p>
+<p><code>context.insert_limit_order(&quot;rb1906&quot;, Exchange.SHFE, &quot;acc_2&quot;, 3500.0, 2, PriceType.Limit, Side.Buy, Offset.Open)</code></p>
 
                                 
                                 </section>
@@ -995,7 +1008,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"context.insert_order 报单","level":"1.3.5.1","depth":3,"next":{"title":"context.cancel_order 撤单","level":"1.3.5.2","depth":3,"path":"context/context.cancel_order.md","ref":"./context/context.cancel_order.md","articles":[]},"previous":{"title":"交易相关函数","level":"1.3.5","depth":2,"ref":"","articles":[{"title":"context.insert_order 报单","level":"1.3.5.1","depth":3,"path":"context/context.insert_order.md","ref":"./context/context.insert_order.md","articles":[]},{"title":"context.cancel_order 撤单","level":"1.3.5.2","depth":3,"path":"context/context.cancel_order.md","ref":"./context/context.cancel_order.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters-small","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"context/context.insert_order.md","mtime":"2019-08-20T08:24:37.998Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-20T08:03:44.802Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"context.insert_order 报单","level":"1.3.5.1","depth":3,"next":{"title":"context.cancel_order 撤单","level":"1.3.5.2","depth":3,"path":"context/context.cancel_order.md","ref":"./context/context.cancel_order.md","articles":[]},"previous":{"title":"交易相关函数","level":"1.3.5","depth":2,"ref":"","articles":[{"title":"context.insert_order 报单","level":"1.3.5.1","depth":3,"path":"context/context.insert_order.md","ref":"./context/context.insert_order.md","articles":[]},{"title":"context.cancel_order 撤单","level":"1.3.5.2","depth":3,"path":"context/context.cancel_order.md","ref":"./context/context.cancel_order.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters-small","livereload"],"pluginsConfig":{"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"context/context.insert_order.md","mtime":"2019-08-20T08:33:18.088Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-20T08:03:44.802Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
