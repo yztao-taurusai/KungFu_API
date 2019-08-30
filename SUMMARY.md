@@ -47,8 +47,8 @@
 - 数据结构
   - [Instrument 合约信息](./data_struct/Instrument.md)
   - [Quote 行情信息](./data_struct/Quote.md)
-  - [Order 订单信息](./data_struct/Order.md)
-  - [Trade 成交信息](./data_struct/Trade.md)
+  - [Order 订单回报信息](./data_struct/Order.md)
+  - [Trade 订单成交信息](./data_struct/Trade.md)
   - [Position 持仓信息](./data_struct/Position.md)
   - [PortfolioInfo 策略资产信息](./data_struct/PortfolioInfo.md)
   - [SubPortfolioInfo 策略中账号资产信息](./data_struct/SubPortfolioInfo.md)
