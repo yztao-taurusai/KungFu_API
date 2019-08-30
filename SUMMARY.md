@@ -1,6 +1,6 @@
 # Summary
 
-- [Beginner Tutorial](./tutorial/BeginnerTutorial.md)
+- [策略demo](./tutorial/BeginnerTutorial.md)
 
 - 函数定义
   - 基本方法

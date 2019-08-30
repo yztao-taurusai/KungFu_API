@@ -1,6 +1,6 @@
 ## 添加交易账号<div id='add_account'></div>
 
-策略需要先添加账户，才能使用该账户报单
+> 策略需要先添加账户，才能使用该账户报单
 
 `context.add_account(source_id, account_id, cash_limit)`
 
